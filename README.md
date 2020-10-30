@@ -12,7 +12,7 @@
 - Install vercel: `npm i -g vercel`
 
 - Login (just on first usage)
-  - `vercel login`
+  - In terminal type: `vercel login`
   - State your email address you got from Vercel settings page
   - You will get an email for verifying your account
   - Once you clicked the confirmation link and you see the verification
