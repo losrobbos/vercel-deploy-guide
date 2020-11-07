@@ -10,16 +10,21 @@
   - Direct link to settings: https://vercel.com/account
 
 - Install vercel: `npm i -g vercel`
+	- If installing a global package gives you and error, try with sudo:
+	- `sudo npm i -g vercel`
 
 - Login (just on first usage)
   - In terminal type: `vercel login`
   - State your email address you got from Vercel settings page
-  - You will get an email for verifying your account
-  - Once you clicked the confirmation link and you see the verification
+  - hit enter and - important - don't close the terminal, keep it open!!
+  - You will now get an email for verifying your account
+  - Once you clicked the confirm link in the email and get the verification
     - go back to the terminal
     - you should get a message for successful connection
 
 DONE!
+
+You only need to do this terminal login once (it will last for several days)
 
 
 ### Deployment test
@@ -29,10 +34,12 @@ DONE!
 - Get into a folder with a react app that you want to deploy
 - Type `vercel`
 - Follow the instructions (in case of doubt - accept all the defaults please with enter please)
+
 - After deployment finished you receive two links
   - Open the "Production" link in the browser
   - Check if your App was deployed correctly
   - The other link "Inspect" is for checking your deployment status & any issues
+
 - On all subsequent deployments you do `vercel --prod`
   - if you just type "vercel" you get a preview deloyment
     ( to check out if everythings works okay - before you overwrite your real webpage)
@@ -67,10 +74,12 @@ Deployment process:
 
 - Type `vercel`
 - Follow the instructions (in case of doubt - accept all the defaults please with enter please)
+
 - After deployment finished you receive two links
   - Open the "Production" link in the browser
   - Check if your App was deployed correctly
   - The other link "Inspect" is for checking your deployment status & any issues
+
 - On all subsequent deployments you do `vercel --prod`
   - if you just type "vercel" you get a preview deloyment
     ( to check out if everythings works okay - before you overwrite your real webpage)
