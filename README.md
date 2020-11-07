@@ -10,7 +10,7 @@
   - Direct link to settings: https://vercel.com/account
 
 - Install vercel: `npm i -g vercel`
-	- If installing a global package gives you and error, try with sudo:
+	- If installing a global package gives you an error, try with sudo:
 	- `sudo npm i -g vercel`
 
 - Login (just on first usage)
