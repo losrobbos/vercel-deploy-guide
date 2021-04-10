@@ -35,6 +35,29 @@ You only need to do this terminal login once (it will last for several days)
 - Type `vercel`
 - Follow the instructions (in case of doubt - accept all the defaults please with enter please)
 
+##### Special handling of first deployment
+
+- on first deployment you likely will receive an error.... here's why :)
+
+  - Vercel - as of now - treats React warnings as errors. and will cancel the build on warnings!
+  - very likely you WILL have some React warnings in your app, e.g. due to not used variables, etc
+  - you can see the concrete issue when you run "vercel logs <yourAppName>"
+  - it will tell you that you need to set the environment variable "CI" to false, if you do not want this behaviour
+
+- the fix: go to the vercel dashboard: https://vercel.com/dashboard
+  - click the title of your app (should be listed at the first one in the list)
+  - click the tab "Settings"
+  - in the left menu: go to section "Environment variables"
+  - set a "Plaintext" variable
+    - In the Name field put the value: CI
+    - In the Value field put the value: false
+    - Make the variable available in all environments
+    - Click save
+  - Now try to redeploy the app, with: `vercel --prod`
+    - Now hopefully the build will run through!
+
+##### Open & update deployed page
+
 - After deployment finished you receive two links
   - Open the "Production" link in the browser
   - Check if your App was deployed correctly
@@ -83,3 +106,19 @@ Deployment process:
 - On all subsequent deployments you do `vercel --prod`
   - if you just type "vercel" you get a preview deloyment
     ( to check out if everythings works okay - before you overwrite your real webpage)
+
+##### Caution - Backend Limitations
+
+Vercel has currently (Feb 2021) the limitations, that you cannot write / upload files to the filesystem
+
+Also there is no support for websockets.
+
+In case you wanna either deploy apps with file upload or messaging featurs, rather use Heroku as free alternative for hosting node JS:
+
+https://devcenter.heroku.com/articles/deploying-nodejs
+
+Or my personal Guide with some more detailed notes: 
+
+https://github.com/losrobbos/heroku-node-deploy-guide
+
+However: For normal, simple express backends - that do not write files or just forward files to a file provider for storage (e.g. AWS S3) you can stick with Vercel. It is very easy and fast for deployment.
