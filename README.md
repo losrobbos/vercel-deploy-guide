@@ -1,4 +1,12 @@
-## Setup Deployment with Vercel (Zeit.now)
+## Deployment with Vercel (Zeit.now)
+
+In order to deploy our React apps with vercel we need two things:
+- a vercel account
+- the Vercel CLI to make deployments of our app from the terminal
+
+We can also deploy NodeJS / Express APIs with Vercel (instructions on this are also in this guide)
+
+### Setup: Account creation & CLI installation
 
 - Signup: vercel.com/signup
   - Use GitHub for signup
@@ -10,8 +18,8 @@
   - Direct link to settings: https://vercel.com/account
 
 - Install vercel: `npm i -g vercel`
-	- If installing a global package gives you an error, try with sudo:
-	- `sudo npm i -g vercel`
+  - If installing a global package gives you an error, try with sudo:
+  - `sudo npm i -g vercel`
 
 - Login (just on first usage)
   - In terminal type: `vercel login`
@@ -24,10 +32,10 @@
 
 DONE!
 
-You only need to do this terminal login once (it will last for several days)
+You only need to do this terminal login once (it will last for a while until you get prompted again)
 
 
-### Deployment test
+### Deployment
 
 #### Frontend
 
@@ -115,10 +123,6 @@ Also there is no support for websockets.
 
 In case you wanna either deploy apps with file upload or messaging featurs, rather use Heroku as free alternative for hosting node JS:
 
-https://devcenter.heroku.com/articles/deploying-nodejs
-
-Or my personal Guide with some more detailed notes: 
-
 https://github.com/losrobbos/heroku-node-deploy-guide
 
-However: For normal, simple express backends - that do not write files or just forward files to a file provider for storage (e.g. AWS S3) you can stick with Vercel. It is very easy and fast for deployment.
+However: For normal, simple express backends that do not write files or just forward files to a file provider for storage (e.g. AWS S3) you can stick with Vercel. It is very easy to setup and the performance of deployed APIs is typically quite good.
