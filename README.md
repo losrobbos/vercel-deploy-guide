@@ -46,11 +46,10 @@ You only need to do this terminal login once (it will last for a while until you
 ##### Special handling of first deployment
 
 - on first deployment you likely will receive an error.... here's why :)
-
   - Vercel - as of now - treats React warnings as errors. and will cancel the build on warnings!
   - very likely you WILL have some React warnings in your app, e.g. due to not used variables, etc
   - you can see the concrete issue when you run "vercel logs <yourAppName>"
-  - it will tell you that you need to set the environment variable "CI" to false, if you do not want this behaviour
+  - it will tell you that you need to set the environment variable "CI" to false, to allow depeloyment of a React app that has unfixed warnings
 
 - the fix: go to the vercel dashboard: https://vercel.com/dashboard
   - click the title of your app (should be listed at the first one in the list)
