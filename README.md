@@ -116,12 +116,12 @@ Deployment process:
 
 ##### Caution - Backend Limitations
 
-Vercel has currently (Feb 2021) the limitations, that you cannot write / upload files to the filesystem
+Vercel has currently (Feb 2021) the limitation that you cannot write / upload files to the filesystem.
 
 Also there is no support for websockets.
 
-In case you wanna either deploy apps with file upload or messaging featurs, rather use Heroku as free alternative for hosting node JS:
+In case you wanna either deploy apps with file upload or a messaging feature, rather use Heroku as free alternative for deploying your Node app:
 
 https://github.com/losrobbos/heroku-node-deploy-guide
 
-However: For normal, simple express backends that do not write files or just forward files to a file provider for storage (e.g. AWS S3) you can stick with Vercel. It is very easy to setup and the performance of deployed APIs is typically quite good.
+However: For normal, simple express backends that do not write files or just forward files to a file provider for storage (e.g. Cloudinary or AWS S3) you can stick with Vercel. It is very easy to setup and the performance of deployed APIs is typically quite good.
