@@ -8,7 +8,7 @@ We can also deploy NodeJS / Express APIs with Vercel (instructions on this are a
 
 ### Setup: Account creation & CLI installation
 
-- Signup: vercel.com/signup
+- Signup: https://vercel.com/signup
   - Use GitHub for signup
   - In case you are not logged in - log into GitHub
 
