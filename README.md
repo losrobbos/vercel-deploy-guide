@@ -87,18 +87,18 @@ Put in the following content:
 {
   "version": 2,
   "builds": [
-      { "use": "@vercel/node", "src": "app.js" }
+      { "use": "@vercel/node", "src": "server.js" }
   ],
   "routes": [
       { 
         "src": "/(.*)", 
-        "dest": "app.js"
+        "dest": "server.js"
       }
     ]
 }
 ```
 
-Replace "app.js" with the name of your app startup file (e.g. "server.js" or "index.js", whatever you use in your app). Be aware "app.js" is stated TWO times in the file, so please replace both occurences. Otherwise it will not work
+Replace "server.js" with the name of your app startup file (e.g. "app.js" or "index.js", whatever you use in your app). Be aware "server.js" is stated TWO times in the file, so please replace both occurences. Otherwise it will not work
 
 Deployment process: 
 
