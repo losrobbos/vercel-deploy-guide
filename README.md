@@ -118,7 +118,7 @@ Here we focus on the Terminal Deployment using the Vercel CLI:
 
 - Open a terminal inside your project folder
 - Type `vercel`
-- Follow the instructions (in case of doubt - accept all the defaults please with enter please)
+- Follow the instructions (in case of doubt - accept all the defaults by hitting ENTER on each question please :))
 
 - After deployment finished you receive two links
   - Open the "Production" link in the browser
