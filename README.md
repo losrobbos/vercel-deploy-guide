@@ -116,7 +116,8 @@ There are two ways. Either use the GitHub integration or Deployment from the ter
 
 Here we focus on the Terminal Deployment using the Vercel CLI:
 
-- Type `vercel` in your current folder
+- Open a terminal inside your project folder
+- Type `vercel`
 - Follow the instructions (in case of doubt - accept all the defaults please with enter please)
 
 - After deployment finished you receive two links
