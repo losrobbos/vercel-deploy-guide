@@ -102,9 +102,9 @@ Replace "server.js" with the name of your app startup file (e.g. "app.js" or "in
 
 #### Environment
 
-Vercel deployed your whole folder and does not care about your .gitignore file.
+Vercel by default deploys your WHOLE folder as it is, with all its contents. It does not care about your .gitignore file.
 
-So in order to prevent to upload your .env file or other files or subfolders, you need to create a .vercelignore file.
+So in order to prevent Vercel to upload your .env file or other files or subfolders, you need to create a .vercelignore file.
 
 The .vercelignore file works just like the .gitignore file. We list in there all files and folders we don't want to "push" (in this case: "deploy").
 
