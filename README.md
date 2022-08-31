@@ -100,22 +100,6 @@ Put in the following content:
 
 Replace "server.js" with the name of your app startup file (e.g. "app.js" or "index.js", whatever you use in your app). Be aware "server.js" is stated TWO times in the file, so please replace both occurences. Otherwise it will not work
 
-#### Environment
-
-Go to the Vercel dashboard page, select your project, go to tab "Settings" and then on the left side the menu entry "Environment variables". State all your environment settings here (copy over each key from your .env file and adapt the values).
-
-In case you use the GitHub Integration, you are done here.
-  
-##### Env in terminal deploys
-  
-In case you deploy your app directly from the terminal using the Vercel CLI, by default deploys your WHOLE folder as it is, with all its contents. It does not care about your .gitignore file.
-
-So in order to prevent Vercel to upload your .env file or other files or subfolders, you need to create a .vercelignore file.
-
-The .vercelignore file works just like the .gitignore file. We list in there all files and folders we don't want to "push" (in this case: "deploy").
-
-At minimum state your ".env" file in the .vercelignore file.
-
 #### Deployment process
 
 There are two ways. Either use the GitHub integration or Deployment from the terminal.
@@ -135,7 +119,24 @@ Here we focus on the Terminal Deployment using the Vercel CLI:
   - if you just type "vercel" you get a preview deloyment
     ( to check out if everythings works okay - before you overwrite your real webpage)
 
-##### Caution - Backend Limitations
+#### Environment
+
+Go to the Vercel dashboard page, select your project, go to tab "Settings" and then on the left side the menu entry "Environment variables". State all your environment settings here (copy over each key from your .env file and adapt the values).
+
+In case you use the GitHub Integration, you are done here.
+  
+##### Env in terminal deploys
+  
+In case you deploy your app directly from the terminal using the Vercel CLI, by default deploys your WHOLE folder as it is, with all its contents. It does not care about your .gitignore file.
+
+So in order to prevent Vercel to upload your .env file or other files or subfolders, you need to create a .vercelignore file.
+
+The .vercelignore file works just like the .gitignore file. We list in there all files and folders we don't want to "push" (in this case: "deploy").
+
+At minimum state your ".env" file in the .vercelignore file.
+
+
+  ##### Caution - Backend Limitations
 
 Vercel has currently (Feb 2021) the limitation that you cannot write / upload files to the filesystem.
 
