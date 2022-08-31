@@ -136,7 +136,7 @@ The .vercelignore file works just like the .gitignore file. We list in there all
 At minimum state your ".env" file in the .vercelignore file.
 
 
-  ##### Caution - Backend Limitations
+#### Caution - Backend Limitations
 
 Vercel has currently (Feb 2021) the limitation that you cannot write / upload files to the filesystem.
 
