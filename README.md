@@ -127,7 +127,7 @@ In case you use the GitHub Integration, you are done here.
   
 ##### Env in terminal deploys
   
-In case you deploy your app directly from the terminal using the Vercel CLI, by default deploys your WHOLE folder as it is, with all its contents. It does not care about your .gitignore file.
+In case you deploy your app directly from the terminal using the Vercel CLI, by default Vercel deploys your WHOLE folder as it is, with all its contents. It does not care about your .gitignore file.
 
 So in order to prevent Vercel to upload your .env file or other files or subfolders, you need to create a .vercelignore file.
 
