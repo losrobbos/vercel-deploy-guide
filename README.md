@@ -102,9 +102,13 @@ Replace "server.js" with the name of your app startup file (e.g. "app.js" or "in
 
 #### Environment
 
-This section just applies in case you deploy from the terminal using the Vercel CLI.
+Go to the Vercel dashboard page, select your project, go to tab "Settings" and then on the left side the menu entry "Environment variables". State all your environment settings here (copy over each key from your .env file and adapt the values).
 
-Vercel by default deploys your WHOLE folder as it is, with all its contents. It does not care about your .gitignore file.
+In case you use the GitHub Integration, you are done here.
+  
+##### Env in terminal deploys
+  
+In case you deploy your app directly from the terminal using the Vercel CLI, by default deploys your WHOLE folder as it is, with all its contents. It does not care about your .gitignore file.
 
 So in order to prevent Vercel to upload your .env file or other files or subfolders, you need to create a .vercelignore file.
 
